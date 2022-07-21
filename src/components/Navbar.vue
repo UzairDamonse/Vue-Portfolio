@@ -8,10 +8,11 @@
       <div>
         <li class="Links">
           <div class="link">
-            <a class="MusicButton" v-if="!isPlaying" @click="play"
+            <!-- <audio ref="song" :src="songs.src" autoplay></audio> -->
+            <a class="MusicButton" v-if="!isPlaying" @click="play" title="Play"
               ><i class="fa-solid fa-volume-xmark"></i
             ></a>
-            <a class="MusicButton" v-else @click="pause"
+            <a class="MusicButton" v-else @click="pause" title="Pause"
               ><i class="fa-solid fa-volume-high"></i
             ></a>
           </div>
@@ -49,7 +50,7 @@ export default {
   data() {
     return {
       index: 0,
-      isPlaying: false,
+      isPlaying: true,
       songs: {
         src: require("../assets/A_mystical journey_3.mp3"),
       },
@@ -58,14 +59,11 @@ export default {
   },
   methods: {
     play(song) {
-      if (typeof song.src != "undefined") {
-        this.player.src = this.songs.src;
-      }
-      this.player.play();
+      this.$refs.song.play();
       this.isPlaying = true;
     },
     pause() {
-      this.player.pause();
+      this.$refs.song.pause();
       this.isPlaying = false;
     },
     toggleNav() {
@@ -75,7 +73,19 @@ export default {
   created() {
     this.player.src = this.songs.src;
     // this.player.play();
+    //   this.player.audio.addEventListener("canplaythrough", () => {
+    //     audio.play().catch((e) => {
+    //       window.addEventListener(
+    //         "click",
+    //         () => {
+    //           audio.play();
+    //         },
+    //         { once: true }
+    //       );
+    //     });
+    //   });
   },
+  mounted() {},
 };
 </script>
 

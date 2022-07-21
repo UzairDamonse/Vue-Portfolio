@@ -16,33 +16,34 @@
       </p>
       <div id="cardHolder" class="row d-flex justify-content-around">
         <div id="cardTitle">
-          <h1>Skills</h1>
+          <h1 class="mt-2" id="Skills">Skills</h1>
         </div>
-        <div id="card" class="col-md-4" title="HTML">
+        <div id="card" class="col-md-4">
           <i id="html" class="skill-icons fa-brands fa-html5"></i>
         </div>
-        <div id="card" class="col-md-4" title="CSS">
+        <div id="card" class="col-md-4">
           <i id="css" class="skill-icons fa-brands fa-css3"></i>
         </div>
-        <div id="card" class="col-md-4" title="JavaScript">
+        <div id="card" class="col-md-4">
           <i id="js" class="skill-icons fa-brands fa-js"></i>
         </div>
-        <div id="card" class="col-md-4" title="Vuejs">
+        <div id="card" class="col-md-4">
           <i id="vuejs" class="skill-icons fa-brands fa-vuejs"></i>
         </div>
-        <div id="card" class="col-md-4" title="MySQL">
+        <div id="card" class="col-md-4">
           <i id="mySql" class="skill-icons fa-solid fa-database"></i>
         </div>
-        <div id="card" class="col-md-4" title="Bootstrap">
+        <div id="card" class="col-md-4">
           <i id="bootstrap" class="skill-icons fa-brands fa-bootstrap"></i>
         </div>
-        <div id="card" class="col-md-4" title="Node-js">
+        <div id="card" class="col-md-4">
           <i id="node-js" class="skill-icons fa-brands fa-node-js"></i>
         </div>
-        <div id="card" class="col-md-4" title="Git">
+        <div id="card" class="col-md-4">
           <i id="git" class="skill-icons fa-brands fa-git-square"></i>
         </div>
       </div>
+      <div id="Resume" v-for="resume in resume" :key="resume.id"></div>
     </div>
   </div>
   <Footer />
@@ -51,6 +52,35 @@
 <script>
 import Footer from "@/components/Footer.vue";
 export default {
+  data() {
+    return {
+      resume: [
+        {
+          id: 1,
+          Title: "ATK Arena",
+          Role: "Intern",
+          Year: "December 2021-January 2022",
+          Description: "",
+        },
+        {
+          id: 2,
+          Title: "Cape Academy of Maths, Science and Technology",
+          Role: "Matric",
+          Year: "2017-2021",
+          Description:
+            "I matriculated in 2021 where I graduated with a dipolma",
+        },
+        {
+          id: 3,
+          Title: "Life Choices",
+          Role: "Student",
+          Year: "March 2022-Present",
+          Description:
+            "I am attending a full-time coding course where I am being taught to become a full-stack web developer",
+        },
+      ],
+    };
+  },
   components: {
     Footer,
   },
@@ -58,6 +88,8 @@ export default {
 </script>
 
 <style scoped>
+/* About */
+
 #about {
   background: url("https://i.postimg.cc/sxrxFbrK/About-background-1.jpg");
   min-height: 100vh;
@@ -96,6 +128,11 @@ export default {
 
 .description {
   font-size: 1.4rem;
+}
+
+#Skills {
+  font-family: skyrim;
+  font-size: 5rem;
 }
 
 #cardHolder {
@@ -149,6 +186,7 @@ export default {
   padding-top: 5.5rem;
   padding-left: 0.5rem;
 }
+
 #git {
   padding-top: 5.4rem;
   padding-left: 0.2rem;
