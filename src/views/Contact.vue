@@ -9,7 +9,7 @@
           Get in touch with me
         </h2>
         <div class="row text-center mx-5 px-3 mt-2" id="Contact-left">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <a href="https://github.com/UzairDamonse/" target="_blank">
               <i
                 class="social text-decoration-none fa-brands fa-github-square my-4"
@@ -17,7 +17,14 @@
               </i>
             </a>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-4">
+            <a href="https://codepen.io/uzairdamonse" target="_blank">
+              <i
+                class="social text-decoration-none fa-brands fa-codepen my-4"
+              ></i>
+            </a>
+          </div>
+          <div class="col-md-4">
             <a
               href="https://www.linkedin.com/in/uzair-damonse-9b3911236/"
               target="_blank"
@@ -149,6 +156,8 @@ export default {
   );
   border: 1px solid black;
   border-radius: 20% 20% 20% 20% / 2% 5% 5% 2%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 #Contact-left {

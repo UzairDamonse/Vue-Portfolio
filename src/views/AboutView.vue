@@ -16,7 +16,7 @@
       </p>
       <div id="cardHolder" class="row d-flex justify-content-around">
         <div id="cardTitle">
-          <h1 class="mt-2" id="Skills">Skills</h1>
+          <h1 class="mt-2 title" id="Skills">Skills</h1>
         </div>
         <div id="card" class="col-md-4">
           <i id="html" class="skill-icons fa-brands fa-html5"></i>
@@ -43,7 +43,59 @@
           <i id="git" class="skill-icons fa-brands fa-git-square"></i>
         </div>
       </div>
-      <div id="Resume" v-for="resume in resume" :key="resume.id"></div>
+      <div id="Resume">
+        <div class="container py-5">
+          <h2 id="Resume-title" class="text-capitalize text-center mx-4 px-3">
+            My Current Abilities and Past Experience
+          </h2>
+          <p class="underline text-center mx-4 px-3 mb-5 pb-5"></p>
+
+          <div class="row">
+            <div class="col-md-5">
+              <div>
+                <div class="Me mx-4 px-3 d-flex justify-content-center"></div>
+                <h2 class="title text-uppercase text-start mx-4 px-3">
+                  Objective
+                </h2>
+                <p class="text-start mx-4 px-3 mb-5 my-5">
+                  My ultimate objective is to bring value to your project and
+                  help elevate it to the next level as well improve myself in
+                  the process of doing so
+                </p>
+              </div>
+              <div>
+                <h2 class="title text-uppercase text-start mx-4 px-3">
+                  designer toolkit
+                </h2>
+                <p class="underline mx-4 px-3 mb-5"></p>
+                <ul class="mx-5 px-3 my-5 text-start">
+                  <li class="text">Web Design</li>
+                  <li class="text">User Experience</li>
+                  <li class="text">Web Development</li>
+                  <li class="text">Mobile Responsiveness</li>
+                </ul>
+              </div>
+              <div>
+                <h2 class="title text-uppercase text-start mx-4 px-3">
+                  Personal skills
+                </h2>
+                <ul class="mx-5 px-3 my-5 text-start">
+                  <li class="text">Leading</li>
+                  <li class="text">Team Player</li>
+                  <li class="text">Communication</li>
+                  <li class="text">Problem-Solving</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <h2 class="title text-uppercase text-start mx-4 px-3">
+                work experience / education
+              </h2>
+              <Resume />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <Footer />
@@ -51,38 +103,11 @@
 
 <script>
 import Footer from "@/components/Footer.vue";
+import Resume from "@/components/Resume.vue";
 export default {
-  data() {
-    return {
-      resume: [
-        {
-          id: 1,
-          Title: "ATK Arena",
-          Role: "Intern",
-          Year: "December 2021-January 2022",
-          Description: "",
-        },
-        {
-          id: 2,
-          Title: "Cape Academy of Maths, Science and Technology",
-          Role: "Matric",
-          Year: "2017-2021",
-          Description:
-            "I matriculated in 2021 where I graduated with a dipolma",
-        },
-        {
-          id: 3,
-          Title: "Life Choices",
-          Role: "Student",
-          Year: "March 2022-Present",
-          Description:
-            "I am attending a full-time coding course where I am being taught to become a full-stack web developer",
-        },
-      ],
-    };
-  },
   components: {
     Footer,
+    Resume,
   },
 };
 </script>
@@ -127,8 +152,10 @@ export default {
 }
 
 .description {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
+
+/* Skills */
 
 #Skills {
   font-family: skyrim;
@@ -154,7 +181,7 @@ export default {
 
 .skill-icons {
   font-size: 11rem;
-  color: rgba(106, 102, 92, 0.8);
+  color: #1c4e58;
   text-shadow: 0px 0px 8px rgba(79, 73, 67, 0.8);
 }
 
@@ -190,5 +217,28 @@ export default {
 #git {
   padding-top: 5.4rem;
   padding-left: 0.2rem;
+}
+
+/* Resume */
+#Resume-title {
+  font-family: skyrim;
+  font-size: 3rem;
+  color: var(--blue);
+  text-shadow: 0px 0px 2px #000;
+}
+
+.title {
+  font-family: skyrim;
+  font-size: 2.5rem;
+  color: var(--blue);
+  text-shadow: 0px 0px 2px #000;
+}
+
+.text {
+  margin-bottom: 0.73rem;
+}
+p,
+li {
+  font-size: 1.2rem;
 }
 </style>
