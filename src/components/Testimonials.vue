@@ -103,4 +103,11 @@ a {
 a:hover {
   color: var(--white);
 }
+
+@media only screen and (max-width: 300px) {
+  #testImg {
+    height: 250px;
+    width: 250px;
+  }
+}
 </style>

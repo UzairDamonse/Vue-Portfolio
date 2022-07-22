@@ -41,4 +41,22 @@ export default {
   font-size: 5rem;
   color: var(--blue);
 }
+
+@media only screen and (max-width: 450px) {
+  #title {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #title {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  #title {
+    font-size: 2.5rem;
+  }
+}
 </style>
