@@ -22,7 +22,7 @@ export default {};
 
 <style>
 #Footer {
-  height: 10vh;
+  height: 15vh;
   background-color: var(--black);
   color: var(--grey);
   display: flex;

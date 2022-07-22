@@ -199,7 +199,7 @@ export default {
 }
 #vuejs {
   padding-top: 6.3rem;
-  padding-left: 1rem;
+  padding-left: 0.5rem;
 }
 #mySql {
   padding-top: 5.2rem;

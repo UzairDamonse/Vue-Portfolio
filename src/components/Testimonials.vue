@@ -5,6 +5,9 @@
     <h3 id="Role">{{ testimonial.Role }}</h3>
     <p>
       <i class="fa-solid fa-quote-left"></i> {{ testimonial.Description }}
+      <a v-if="testimonial.URL" v-bind:href="testimonial.URL" target="_blank"
+        >Read more</a
+      >
       <i class="fa-solid fa-quote-right"></i>
     </p>
   </div>
@@ -29,6 +32,7 @@ export default {
           Title: "Sandy Williams",
           Role: "Lecturer",
           imgURL: "https://i.postimg.cc/4ND4vfD4/Sandy-removebg-preview.png",
+          URL: "https://docs.google.com/document/d/e/2PACX-1vSc17zLpRIZ4s1bm1SKTKwW7pwmhfRQ-pAIQmFvwB1qi6HijWivRAys147AyBr2QEdf_FrVTmOgRqJM/pub",
           Description: `Uzair Damonse joined St John Brigade in the year 2014. He then became a member of the brigade and volunteered his time to helping others in need. Uzair is a valued member of the St John Brigade and has contributed a lot of his time as a volunteer. Uzair is a hardworking, determined, and intelligent young man...`,
         },
         {
@@ -83,12 +87,20 @@ p {
 }
 
 #testImg {
-  height: 20%;
-  width: 20%;
+  height: 300px;
+  width: 300px;
   filter: drop-shadow(0px 0px 5px #757674);
 }
 
 #Role {
   color: var(--blue);
+}
+
+a {
+  color: var(--blue);
+}
+
+a:hover {
+  color: var(--white);
 }
 </style>
