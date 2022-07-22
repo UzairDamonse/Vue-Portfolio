@@ -87,9 +87,10 @@ p {
 }
 
 #testImg {
+  z-index: 1000;
   height: 300px;
   width: 300px;
-  filter: drop-shadow(0px 0px 5px #757674);
+  /* filter: drop-shadow(0px 0px 5px rgba(117, 118, 116, 0.589)); */
 }
 
 #Role {

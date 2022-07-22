@@ -100,10 +100,10 @@ export default {
 }
 
 nav {
+  position: fixed;
   width: 100%;
   height: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
   top: 0;
 }
 
@@ -112,6 +112,7 @@ ul {
   align-items: center;
   justify-content: flex-end;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100000000;
 }
 
 ul li {
@@ -173,7 +174,7 @@ a:hover {
   }
 
   .menu {
-    z-index: 10000;
+    z-index: 100000000;
   }
 
   .active {
