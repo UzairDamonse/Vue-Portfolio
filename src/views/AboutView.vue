@@ -128,6 +128,7 @@ export default {
 }
 
 .about-container {
+  width: 90%;
   margin-top: 5rem;
   margin-bottom: 5rem;
   border: #000 2px solid;
@@ -240,5 +241,39 @@ export default {
 p,
 li {
   font-size: 1.2rem;
+  list-style-type: square;
+}
+
+@media only screen and (max-width: 450px) {
+  #card{
+  height: 19rem;
+  width: 19rem;    
+  }
+
+  .skill-icons {
+    font-size: 9rem;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  #card{
+  height: 17rem;
+  width: 17rem;    
+  }
+
+  .skill-icons {
+    font-size: 7rem;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  #card{
+  height: 15rem;
+  width: 15rem;    
+  }
+
+  .skill-icons {
+    font-size: 5rem;
+  }
 }
 </style>

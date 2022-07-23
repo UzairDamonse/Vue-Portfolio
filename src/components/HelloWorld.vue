@@ -28,7 +28,7 @@ export default {
 }
 
 #Name {
-  font-size: 5.8rem;
+  font-size: 5.5rem;
   font-weight: 500;
   border-top: 0.2rem solid black;
   border-radius: 31% 30% 30% 31% / 4% 4% 0% 0%;
@@ -51,5 +51,34 @@ export default {
   background-clip: text;
   color: transparent;
   text-shadow: 0px 3px 3px var(--white);
+}
+
+@media only screen and (max-width: 550px) {
+  #Name{
+    font-size: 4rem;
+  }
+
+  #Sub-title{
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #Name{
+    font-size: 3rem;
+  }
+
+  #Sub-title{
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #Name{
+    font-size: 2.5rem;
+  }
+
+  #Sub-title{
+    font-size: 1.5rem;
+  }
 }
 </style>

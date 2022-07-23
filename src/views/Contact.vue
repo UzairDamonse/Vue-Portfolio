@@ -3,7 +3,7 @@
     id="holder"
     class="pt-5 d-flex align-items-center justify-content-center"
   >
-    <div class="container p-0 row" id="Contact-container">
+    <div class="p-0 row" id="Contact-container">
       <div class="col-lg-6 py-5 sides">
         <h2 id="Contact-title" class="text-capitalize text-center mx-4 px-3">
           Get in touch with me
@@ -136,11 +136,17 @@ export default {
 </script>
 
 <style scoped>
+#Contact-container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  width: 90%;
+}
+
 #holder {
   background: url("https://i.postimg.cc/WbCM3zMg/Landing-Background.jpg");
   background-size: cover;
   background-attachment: fixed;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .sides {
@@ -252,5 +258,18 @@ export default {
   color: var(--blue);
   border: 1px solid var(--blue);
   cursor: url("@/assets/Skyrim-normal.cur"), auto;
+}
+
+@media only screen and (max-width: 720px) {
+  #Contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sides {
+    width: 90%;
+    margin-top: 5rem; 
+  }
 }
 </style>
