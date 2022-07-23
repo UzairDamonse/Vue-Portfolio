@@ -29,6 +29,7 @@ export default {
   background-size: cover;
   color: #fff;
   text-shadow: 0px 0px 5px #000;
+  overflow-x: hidden;
 
 }
 
