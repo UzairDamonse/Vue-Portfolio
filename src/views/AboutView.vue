@@ -116,7 +116,7 @@ export default {
 /* About */
 
 #about {
-  background: url("https://i.postimg.cc/sxrxFbrK/About-background-1.jpg");
+  background: url("https://i.postimg.cc/yNWDNwbk/About-background-1-1.webp");
   min-height: 100vh;
   background-size: cover;
   background-attachment: fixed;
@@ -168,7 +168,7 @@ export default {
 }
 
 #card {
-  background: url("https://i.postimg.cc/VL8QjPHF/My-project-3.png");
+  background: url("https://i.postimg.cc/xT6yZPv3/My-project-3.webp");
   background-size: cover;
   height: 22rem;
   width: 22rem;
@@ -245,9 +245,9 @@ li {
 }
 
 @media only screen and (max-width: 450px) {
-  #card{
-  height: 19rem;
-  width: 19rem;    
+  #card {
+    height: 19rem;
+    width: 19rem;
   }
 
   .skill-icons {
@@ -256,9 +256,9 @@ li {
 }
 
 @media only screen and (max-width: 380px) {
-  #card{
-  height: 17rem;
-  width: 17rem;    
+  #card {
+    height: 17rem;
+    width: 17rem;
   }
 
   .skill-icons {
@@ -267,9 +267,9 @@ li {
 }
 
 @media only screen and (max-width: 330px) {
-  #card{
-  height: 15rem;
-  width: 15rem;    
+  #card {
+    height: 15rem;
+    width: 15rem;
   }
 
   .skill-icons {

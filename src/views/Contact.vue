@@ -143,7 +143,7 @@ export default {
 }
 
 #holder {
-  background: url("https://i.postimg.cc/WbCM3zMg/Landing-Background.jpg");
+  background: url("https://i.postimg.cc/4yYG6PsN/Landing-Background-1.webp");
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
@@ -269,7 +269,7 @@ export default {
 
   .sides {
     width: 90%;
-    margin-top: 5rem; 
+    margin-top: 5rem;
   }
 }
 </style>

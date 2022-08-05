@@ -19,7 +19,7 @@ export default {
 <style scoped>
 #landing {
   height: 100vh;
-  background: url("https://i.postimg.cc/WbCM3zMg/Landing-Background.jpg");
+  background: url("https://i.postimg.cc/4yYG6PsN/Landing-Background-1.webp");
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
@@ -54,30 +54,30 @@ export default {
 }
 
 @media only screen and (max-width: 550px) {
-  #Name{
+  #Name {
     font-size: 4rem;
   }
 
-  #Sub-title{
+  #Sub-title {
     font-size: 3rem;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  #Name{
+  #Name {
     font-size: 3rem;
   }
 
-  #Sub-title{
+  #Sub-title {
     font-size: 2rem;
   }
 }
 @media only screen and (max-width: 480px) {
-  #Name{
+  #Name {
     font-size: 2.5rem;
   }
 
-  #Sub-title{
+  #Sub-title {
     font-size: 1.5rem;
   }
 }

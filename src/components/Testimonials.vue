@@ -23,7 +23,7 @@ export default {
           id: 1,
           Title: "Jason Wandrag",
           Role: "Lecturer",
-          imgURL: "https://i.postimg.cc/YSkpVX2J/Jason-removebg-preview.png",
+          imgURL: "https://i.postimg.cc/0j48F3cw/Jason-removebg-preview.webp",
           Description:
             "The best way to describe Uzair is to think of a big, cuddly teddy bear. Uzair manages to bring light to any situation with his infectious smile and very warm and caring demeanor. Uzair has also managed to rapidly upskill in software development, which makes him a perfect candidate for any software development role.",
         },
@@ -31,7 +31,7 @@ export default {
           id: 2,
           Title: "Sandy Williams",
           Role: "Lecturer",
-          imgURL: "https://i.postimg.cc/4ND4vfD4/Sandy-removebg-preview.png",
+          imgURL: "https://i.postimg.cc/JhQRMtpm/Sandy-removebg-preview.webp",
           URL: "https://docs.google.com/document/d/e/2PACX-1vSc17zLpRIZ4s1bm1SKTKwW7pwmhfRQ-pAIQmFvwB1qi6HijWivRAys147AyBr2QEdf_FrVTmOgRqJM/pub",
           Description: `Uzair Damonse joined St John Brigade in the year 2014. He then became a member of the brigade and volunteered his time to helping others in need. Uzair is a valued member of the St John Brigade and has contributed a lot of his time as a volunteer. Uzair is a hardworking, determined, and intelligent young man...`,
         },
@@ -39,14 +39,14 @@ export default {
           id: 3,
           Title: "Ricardo Ronan Moses",
           Role: "Peer",
-          imgURL: "https://i.postimg.cc/269r1rdD/Ricardo-removebg-preview.png",
+          imgURL: "https://i.postimg.cc/Dzh791dB/Ricardo-removebg-preview.webp",
           Description: `Uzair Damonse is a very animated young man who is never afraid to express his thoughts while keeping other people's thoughts and feeling in mind . He has the ability to communicate clearly when working with a group and has an excellent ability to ensure the project reaches it's desired outcome.`,
         },
         {
           id: 4,
           Title: "Fatima Gallant",
           Role: "Peer",
-          imgURL: "https://i.postimg.cc/SsxmQJMd/Fatima-removebg-preview.png",
+          imgURL: "https://i.postimg.cc/BbbShsc3/Fatima-removebg-preview.webp",
           Description:
             "Uzair is a fast learner with the ability to pick up new skills swiftly. With a natural ability for all things technical, Uzair will find a way to fix any problem and overcome any challenge. His competitive nature helps him to exceed in his field. It's been an absolute pleasure working alongside such a bright-minded guy.",
         },
@@ -54,7 +54,7 @@ export default {
           id: 5,
           Title: "Jesse Spence",
           Role: "Peer",
-          imgURL: "https://i.postimg.cc/mg7Lmx4Y/Jesse-removebg-preview.png",
+          imgURL: "https://i.postimg.cc/jjYjRpK6/Jesse-removebg-preview.webp",
           Description:
             "Uzair is an extremely intelligent individual, he is clearly able to grasp complex problems faster than the average person. He has a keen eye for detail and diligently works toward perfection. He's also kind and open-minded which makes him an absolute delight to be around.",
         },
@@ -62,7 +62,7 @@ export default {
           id: 6,
           Title: "Carla Amy Lawrence",
           Role: "Peer",
-          imgURL: "https://i.postimg.cc/jjXsrzLC/Carla-removebg-preview.png",
+          imgURL: "https://i.postimg.cc/3J6Rcycc/Carla-removebg-preview.webp",
           Description:
             "Uzair Damonse is an excellent web developer. His friendly disposition and vast skills makes him an asset to any team. Uzair's work is consistently displayed in both a creative and professional manner. His vision translates beautifully to ensure a well crafted user interface and functional user experience.",
         },

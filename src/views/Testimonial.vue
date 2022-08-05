@@ -25,7 +25,7 @@ export default {
   color: var(--white);
 }
 #Testmonial-container {
-  background: url(https://i.postimg.cc/J0gz6gqj/testimonial-back.jpg);
+  background: url("https://i.postimg.cc/D0RTBGwQ/testimonial-back-1.webp");
   background-attachment: fixed;
   background-size: cover;
   min-height: 100vh;

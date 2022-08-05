@@ -1,10 +1,8 @@
 <template>
   <div id="Projects">
-    <h1 id="title">
-      Some of my projects
-    </h1>
+    <h1 id="title">Some of my projects</h1>
     <div class="row">
-      <Projects/>
+      <Projects />
     </div>
   </div>
   <Footer />
@@ -24,13 +22,12 @@ export default {
 <style scoped>
 #Projects {
   min-height: 100vh;
-  background: url('https://i.postimg.cc/zvwk7KpF/project-background.jpg');
+  background: url("https://i.postimg.cc/Qd7fByKx/project-background-2.webp");
   background-attachment: fixed;
   background-size: cover;
   color: #fff;
   text-shadow: 0px 0px 5px #000;
   overflow-x: hidden;
-
 }
 
 #title {
