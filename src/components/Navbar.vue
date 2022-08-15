@@ -8,7 +8,7 @@
       <div>
         <li class="Links">
           <div class="link">
-            <audio ref="song" :src="songs.src" autoplay loop></audio>
+            <audio ref="song" :src="songs.src" autoplay></audio>
             <a class="MusicButton" v-if="!isPlaying" @click="play" title="Play"
               ><i class="fa-solid fa-volume-xmark"></i
             ></a>
